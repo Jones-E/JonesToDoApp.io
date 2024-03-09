@@ -14,13 +14,17 @@
   --white: #ffffff;
 }
 body {
-  margin: unset;
   height: 100vh;
   background: var(--gradient);
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
+   max-width: 1536px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
 }
 .addBtn {
   color: var(--white);
@@ -180,4 +184,30 @@ ul li {
 }
 .scroll::-webkit-scrollbar-track {
   display: none;
+}
+/*Mobile Response Utility Class*/
+@media (max-width: 1280px) {
+  .todo {
+    max-width: 1024px;
+  }
+}
+@media (max-width: 1024px) {
+  .todo {
+    max-width: 768px;
+  }
+}
+@media (max-width: 768px) {
+  .todo {
+    max-width: 648px;
+  }
+}
+@media (max-width: 648px) {
+  .todo {
+    max-width: 475px;
+  }
+}
+@media (max-width: 475px) {
+  .todo {
+    max-width: 100%;
+  }
 }
